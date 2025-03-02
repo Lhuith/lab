@@ -1,0 +1,17 @@
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'xero/miasma.nvim'
+Plug 'ribru17/bamboo.nvim'
+Plug 'olimorris/onedarkpro.nvim'
+Plug 'rebelot/kanagawa.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+call plug#end()
+
+set termguicolors
+colorscheme miasma
+colorscheme bamboo
+colorscheme onedark
+colorscheme kanagawa
+
+filetype indent off   " Disable file-type-specific indentation
+syntax off            " Disable syntax highlighting

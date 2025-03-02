@@ -104,9 +104,22 @@ ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTONAME_SESSION=true
 # Fire's up oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# directory
+function directory() {
+    echo "%{$fg_no_bold[yellow]%}[$CURRENT_FG%1~]%{$reset_color%}";
+}
+
+
+# username.machiine
+function userhost() {
+    echo "%{$fg_no_bold[red]%}[%n%{$reset_color%}@%{$fg_no_bold[blue]%}%m]%{$reset_color%}";
+}
+PROMPT='$(userhost)$(directory)$(git_status)$(command_status) ';
 source ~/.bash_profile
 
 # User configuration
+#$(real_time)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -176,3 +189,4 @@ autoload -U compinit; compinit
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/eugenemartens/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
