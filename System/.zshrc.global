@@ -15,7 +15,7 @@ export ZSH="/Users/eugenemartens/.oh-my-zsh"
 export EDITOR='nvim'
 export VISUAL='nvim'
 export TERM='xterm-256color'
-
+export PATH="~/.rd/bin:${PATH}"
 #source /usr/local/share/antigen/antigen.zsh
 
 # Set name of the theme to load --- if set to "random", it will
@@ -86,25 +86,27 @@ ZSH_THEME="passion"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #antigen bundle zsh-users/zsh-completions
-
 plugins=(
 	kubectl
 	docker
 	git
+	zsh-history-substring-search
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	github
 	docker-compose
 	docker
-  tmux
+	tmux
+	web-search
 	)
 #antigen apply
 
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTONAME_SESSION=true
+
 # Fire's up oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-
+#
 # directory
 function directory() {
     echo "%{$fg_no_bold[yellow]%}[$CURRENT_FG%1~]%{$reset_color%}";
@@ -159,6 +161,10 @@ complete -o defualt -F __start_nvim v
 #eugene specific configs
 alias go_lab='cd ~/Documents/Study/Lab'
 
+#web-search alias
+alias wb='web_search'
+complete -o defualt -F __start_web_search wb
+
 ###-begin-envkey-completions-###
 #
 # yargs command completion script
@@ -189,4 +195,3 @@ autoload -U compinit; compinit
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/eugenemartens/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
