@@ -1,9 +1,9 @@
 You can use this file to practice editing.
 
-First, fix this spelling mistakke.
-Fixx theese allso.
-Delete this text with the X command.
-Who let the dogs out? cats
+First, fix this spelling mistake.
+Fix these also.
+
+Who let the dogs out?
 This training is provided by LinuxTrainingAcademy.com.
 Here is another line of text.
 Guess what?  Here is even more text!
@@ -30,23 +30,16 @@ one two three four five six seven eight nine ten eleven twelve thirteen
 one two three four five six seven eight nine ten eleven twelve thirteen
 one two three four five six seven eight nine ten eleven twelve thirteen
 one two three four five six seven eight nine ten eleven twelve thirteen
+ten eleven twelve 
+one two three four five six seven eight nine ten eleven twelve thirteen
+
+one two three four five six seven eight nine ten eleven twelve thirteen
+one two three four five six seven eight nine ten eleven twelve thirteen
+one two three four five six seven eight nine ten eleven twelve thirteen
+one two three four five six seven eight nine ten eleven twelve thirteen
 one two three four five six seven eight nine ten eleven twelve thirteen
 one two three four five six seven eight nine ten eleven twelve thirteen
 
-one two three four five six seven eight nine ten eleven twelve thirteen
-one two three four five six seven eight nine ten eleven twelve thirteen
-one two three four five six seven eight nine ten eleven twelve thirteen
-one two three four five six seven eight nine ten eleven twelve thirteen
-one two three four five six seven eight nine ten eleven twelve thirteen
-one two three four five six seven eight nine ten eleven twelve thirteen
-
-Far far away, behind the wild mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean.
-
-A small river named Duden flows by their place and supplies it with the
-necessary regelialia. It is a paradisematic country, in which roasted parts of
-sentences fly into your mouth.
 
 Even the all-powerful Pointing has no control about the blind texts it is an
 almost unorthographic life One day however a small line of blind text by the
