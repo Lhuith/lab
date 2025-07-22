@@ -1,5 +1,5 @@
-To record a macro, use the q command followed by a regsiter. To stop, type q.
-There are no special macro registers. There is only one a register, for example.
+NOTE: To record a macro, use the q command followed by a regsiter. To stop, type q.
+NOTE: There are no special macro registers. There is only one a register, for example.
 To replay the macro use @ followed by the register.
 To repeat the most recently executed marco, use @@.
 
@@ -8,43 +8,40 @@ Perform your edits and/or commands.
 Move the cursor to the next line with j.
 Stop the recording with q.
 
-Think big.
-Feed and strengthen your mind.
-Better to have written a lousy ballet than to have composed no ballet at all.
-If you donâ€™t prioritize your life, someone else will. 
-Without great solitude no serious work is possible.
+TIPS: Think big.
+TIPS: Feed and strengthen your mind.
+TIPS: Better to have written a lousy ballet than to have composed no ballet at all.
+TIPS: If you donâ€™t prioritize your life, someone else will. 
+TIPS: Without great solitude no serious work is possible.
 
-FIRST NAME: Joseph LAST NAME: Andrews
-FIRST NAME: Scott LAST NAME: Young
-FIRST NAME: Jessica LAST NAME: Smith
-FIRST NAME: Shirley LAST NAME: Landers
-FIRST NAME: Pamela LAST NAME: Lewis
+Joseph Andrews
+Scott Young
+Jessica Smith
+Shirley Landers
+Pamela Lewis
 
 BEFORE: "Montgomery", "(Alabama)" => "usa"
 AFTER:  'Montgomery', 'Alabama', 'USA'
 
-"Montgomery", "(Alabama)" => "usa"
-"Juneau", "(Alaska)" => "usa"
-"Phoenix", "(Arizona)" => "usa"
-"Little", "(Arkansas)" => "usa"
-"Sacramento", "(California)" => "usa"
-"Denver", "(Colorado)" => "usa"
-"Hartford", "(Connecticut)" => "usa"
-"Dover", "(Delaware)" => "usa"
-"Tallahassee", "(Florida)" => "usa"
-"Atlanta", "(Georgia)" => "usa"
+'Montgomery', 'Alabama', 'USA'
+'Juneau', 'Alaska', 'USA'
+'Phoenix', 'Arizona', 'USA'
+'Little', 'Arkansas', 'USA'
+'Sacramento', 'California', 'USA'
+'Denver', 'Colorado', 'USA'
+'Hartford', 'Connecticut', 'USA'
+'Dover', 'Delaware', 'USA'
+'Tallahassee', 'Florida', 'USA'
+'Atlanta', 'Georgia', 'USA'
 
-amazon.com has address: 
-54.239.17.7
+54.239.17.7 amazon.com
+216.58.192.78 google.com
+208.80.154.224 wikipedia.org
 
-google.com has address:
-216.58.192.78
+IA NOTE: 
+A NOTE: Remember, macros just replay what's stored in a register.
 
-wikipedia.org has address:
-208.80.154.224
-
-
-
-Remember, macros just replay what's stored in a register.
+let @d = '0:s/"/;€kb'?€kbg€kl/:s/(//:s/)//:s/ >€kb=>/,/:s/usa/USA.€kb/j'
+let @t = 'ITODO: j'
 
 This training is provided by LinuxTrainingAcademy.com.

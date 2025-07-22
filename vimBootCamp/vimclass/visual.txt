@@ -20,71 +20,71 @@ U - Make uppercase
 > - Shift right
 < - Shift left
 
-usa,Alabama,Montgomery
-usa,Juneau,Alaska
-usa,Phoenix,Arizona
-usa,Little,Arkansas
-usa,Sacramento,California
-usa,Denver,Colorado
-usa,Hartford,Connecticut
-usa,Dover,Delaware
-usa,Tallahassee,Florida
-usa,Atlanta,Georgia
+USA,Alabama,Montgomery
+USA,Juneau,Alaska
+USA,Phoenix,Arizona
+USA,Little,Arkansas
+USA,Sacramento,California
+USA,Denver,Colorado
+USA,Hartford,Connecticut
+USA,Dover,Delaware
+USA,Tallahassee,Florida
+USA,Atlanta,Georgia
 
-line 1: one
-line 2: one,two
-line 3: one,two,three
-line 4: one,two,three,four
-line 5: one,two,three,four,five
-line 6: one,two,three,four
-line 7: one,two,three
-line 8: one,two
-line 9: one
+line 1: one end
+line 2: one,two end
+line 3: one,two,three end
+line 4: one,two,three,four end
+line 5: one,two,three,four,five end
+line 6: one,two,three,four end
+line 7: one,two,three end
+line 8: one,two end
+line 9: one end
 
 class Person
   def initialize(nick_name, birthdate, telephone, title)
-    nick_name=nick_name
-    birthdate=birthdate
-    telephone=telephone
-    title=title
+    @nick_name=nick_name
+    @birthdate=birthdate
+    @telephone=telephone
+    @title=title
   end
 end
 
-john.nick_name = "Happy"
-john.birthdate = "4/4/1984"
-john.telephone = "(555) 612-2000"
-john.title = "Developer"
+billy.nick_name = "Happy"
+billy.birthdate = "4/4/1984"
+billy.telephone = "(555) 612-2000"
+billy.title = "Developer"
 
 function make_slave_device_file () {
-# Pass in slave device, slave device file, bond device.
-local S_DEVICE=$1
-local S_FILE=$2
-local BOND_D=$3
-echo "DEVICE=${S_DEVICE}" > $S_FILE
-echo "BOOTPROTO=none" >> $S_FILE
-echo "ONBOOT=yes" >> $S_FILE
-echo "MASTER=${BOND_D}" >> $S_FILE
-echo "SLAVE=yes" >> $S_FILE
-echo "USERCTL=no" >> $S_FILE
-echo "NM_CONTROLLED=no" >> $S_FILE
+            # pass in slave device, slave device file, bond device.
+            local s_device=$1
+            local s_file=$2
+            local bond_d=$3
+            echo "device=${s_device}" > $s_file
+            echo "bootproto=none" >> $s_file
+            echo "onboot=yes" >> $s_file
+            echo "master=${bond_d}" >> $s_file
+            echo "slave=yes" >> $s_file
+            echo "userctl=no" >> $s_file
+            echo "nm_controlled=no" >> $s_file
 }
 
 START:United States of America State Capital List
-United States of America,Alabama,Montgomery
-United States of America,Juneau,Alaska
-United States of America,Phoenix,Arizona
-United States of America,Little,Arkansas
-United States of America,Sacramento,California
-United States of America,Denver,Colorado
-United States of America,Hartford,Connecticut
-United States of America,Dover,Delaware
-United States of America,Tallahassee,Florida
-United States of America,Atlanta,Georgia
+USA,Alabama,Montgomery
+USA,Juneau,Alaska
+USA,Phoenix,Arizona
+USA,Little,Arkansas
+USA,Sacramento,California
+USA,Denver,Colorado
+USA,Hartford,Connecticut
+USA,Dover,Delaware
+USA,Tallahassee,Florida
+USA,Atlanta,Georgia
 END:United States of America State Capital List
 
 ################################################################################
-Episode V:
-The Empire Strikes Back
+#                                  Episode V:
+#                           The Empire Strikes Back
 ################################################################################
 
 This training is provided by LinuxTrainingAcademy.com.

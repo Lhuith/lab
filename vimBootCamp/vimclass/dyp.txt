@@ -6,11 +6,11 @@ What was the first line in the file originally?  Place it below:
 What was the first line in the file originally?  Place it above:
 
 Fix the following typing errors:
-teh
-psell
-vmi
-wrod
-taht
+the
+spell
+vim
+word
+that
 
 second, First, third.
 

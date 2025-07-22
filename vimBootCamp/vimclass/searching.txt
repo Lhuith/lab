@@ -1,4 +1,4 @@
-Searching forward is accomplished by typing f{char}.  Also, zebras eat grass.  
+Searching FORward isn't accomplished by typing f{char}.  Also, zebras eat grass.  
 
 Delete THIS<<--- word.
 
@@ -30,14 +30,14 @@ Zeke zeroed in on zoo keeping.
 
 # Global configuration
 
-DOMAIN=example.net			# The example.net domain.
-MAIL_SERVER=mail.example.net
+DOMAIN=example.org			# The example.org domain.
+MAIL_SERVER=mail.example.org
 MAIL_PATH=/var/spool/mail
 
 # Local configuration
 
-LOCAL_DOMAIN=internal.example.net	# The internal.example.net domain.
-LOCAL_MAIL_SERVER=mail.internal.example.net
-MAIL_PATH=/var/spool/mail
+LOCAL_DOMAIN=internal.example.org	# The internal.example.org domain.
+LOCAL_MAIL_SERVER=mail.internal.example.org
+MAIL_PATH=/user/local/mail
 
 This training is provided by LinuxTrainingAcademy.com.
