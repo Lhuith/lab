@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scratch 
+  labels:
+    app: scratch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scratch
+  template:
+    metadata:
+      labels:
+        app: scratch
+    spec:
+      containers:
+      - name: scratch
+        image: i_scratch_go:latest
+        imagePullPolicy: Never
+        envFrom:
+          - configMapRef:
+              name: scratch-config
+        ports:
+        - containerPort: 8080
+

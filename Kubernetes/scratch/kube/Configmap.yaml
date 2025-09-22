@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scratch-config
+data:
+  ENV: "Dev" # changed by cron job, hopefully!
+  REPLACE: "replaced by cron with something"

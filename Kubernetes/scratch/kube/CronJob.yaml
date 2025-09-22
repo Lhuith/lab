@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: scratch-cron-job-with-label-ttl
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: 60
+      template:
+        metadata:
+          labels:
+            cron: "yes"
+        spec:
+          containers:
+          - name: hello
+            image: busybox:1.28
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -c
+            - date; echo Hello from Kubernetes cluster
+          restartPolicy: OnFailure

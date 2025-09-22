@@ -1,10 +1,10 @@
 
-######   #######  ######
-#     #  #        #     #
-#     #  #        #     #
-######   #####    #     #
-#     #  #        #     #
-#     #  #        #     #
-######   #######  ######
+OOOOOO   OOOOOOO  OOOOOO
+O     O  O        O     O
+O     O  O        O     O
+OOOOOO   OOOOO    O     O
+O     O  O        O     O
+O     O  O        O     O
+OOOOOO   OOOOOOO  OOOOOO
 
 This training is provided by LinuxTrainingAcademy.com.
