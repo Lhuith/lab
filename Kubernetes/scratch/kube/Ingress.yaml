@@ -4,12 +4,13 @@ metadata:
   name: scratch-ingress
   labels:
     app: scratch
+    namespace: default
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
+  ingressClassName: nginx
   rules:
-    # Rule for the main service
-    - host: scratch.home.com
+    - host: scratch.local
       http:
         paths:
           - path: /
