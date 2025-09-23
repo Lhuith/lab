@@ -24,11 +24,11 @@ func main() {
 	})
 
 	http.HandleFunc("/replace", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, fmt.Sprintf("replace == %v\n", os.Getenv("REPLACE")))
+		fmt.Fprint(w, fmt.Sprintf("replace == %v\n", os.Getenv("REPLACE")))
 	})
 
 	http.HandleFunc("/env", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, os.Getenv("ENV")+"\n")
+		fmt.Fprint(w, os.Getenv("ENV")+"\n")
 	})
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
