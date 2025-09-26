@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: scratch.local
+    - host: home.scratch
       http:
         paths:
           - path: /
