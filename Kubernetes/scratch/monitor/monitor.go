@@ -19,8 +19,8 @@ func RecordMetrics() {
 	fmt.Println("Goin Metric up in here")
 	go func() {
 		for {
-			fmt.Println("Metric Tick, For Sanity")
 			opsProcessed.Inc()
+			fmt.Println("Tick")
 			time.Sleep(2 * time.Second)
 		}
 	}()

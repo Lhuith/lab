@@ -13,6 +13,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Running Metrics From Main")
 	Monitor.RecordMetrics()
 
 	fmt.Println(os.Getenv("ENV"))
