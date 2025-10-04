@@ -5,3 +5,4 @@ metadata:
 data:
   ENV: "Dev" # changed by cron job, hopefully!
   REPLACE: "replaced by cron with something"
+  MSG: "hello%20from%20cron%20job%20via%20config%20map%20v2"

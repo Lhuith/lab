@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Service
 metadata:
   name: scratch-service
+  labels:
+    app: scratch
   annotations:
     prometheus.io/port: "metrics"
     prometheus.io/scrape: "true"
-  labels:
-    app.kubernetes.io/part-of: dms
 spec:
   selector:
     app: scratch

@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: scratch-cron-curl
+spec:
+  schedule: "* * * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: 60
+      template:
+        metadata:
+          labels:
+            cronTitle: "curl-cron"
+        spec:
+          containers:
+          - name: scratch-cron-curl
+            image: buildpack-deps:curl
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -ec
+            - curl scratch-service.default.svc.cluster.local:8080/ping/$MSG
+            envFrom:
+              - configMapRef:
+                  name: scratch-config
+          restartPolicy: OnFailure

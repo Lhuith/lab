@@ -1,18 +1,17 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: dms-service-monitor-2
-  namespace: monitoring
+  name: scratch-service-monitor
   labels:
     release: latest
 spec:
   endpoints:
-    - interval: 15s
+    - interval: 5s
       port: metrics
-      scrapeTimeout: 14s
+      scrapeTimeout: 4s
   namespaceSelector:
       matchNames:
         - default
   selector:
     matchLabels:
-      app.kubernetes.io/part-of: dms
+      app: scratch
