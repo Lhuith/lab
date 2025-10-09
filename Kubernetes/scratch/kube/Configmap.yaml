@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: scratch-config
 data:
+  DATABASE_URL: "10.104.158.64"
   ENV: "Dev" # changed by cron job, hopefully!
   REPLACE: "replaced by cron with something"
-  MSG: "hello%20from%20cron%20job%20via%20config%20map%20v2"
+  MSG: "cron%20job%20ping%20-%20config%20map%20v3"

@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	Database "scratch/database"
 	Monitor "scratch/monitor"
 	Routes "scratch/routes"
 	"scratch/utils"
@@ -15,6 +16,9 @@ import (
 func main() {
 	fmt.Println("Running Metrics From Main")
 	Monitor.RecordMetrics()
+
+	// gorm
+	Database.Gormn()
 
 	fmt.Println(os.Getenv("ENV"))
 	fmt.Println("MiniKube, MiniGopher")
