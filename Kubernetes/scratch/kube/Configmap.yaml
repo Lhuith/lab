@@ -3,7 +3,10 @@ kind: ConfigMap
 metadata:
   name: scratch-config
 data:
-  DATABASE_URL: "10.104.158.64"
+  DATABASE_PORT: "26257"
+  #DATABASE_URL: "roach-cockroachdb-public:"
+  DATABASE_URL: "roach-cockroachdb-public.default.svc.cluster.local"
   ENV: "Dev" # changed by cron job, hopefully!
   REPLACE: "replaced by cron with something"
   MSG: "cron%20job%20ping%20-%20config%20map%20v3"
+

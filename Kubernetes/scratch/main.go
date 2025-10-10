@@ -24,12 +24,13 @@ func main() {
 	fmt.Println("MiniKube, MiniGopher")
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-
 		fmt.Fprint(w, `<h1 style='text-align:center;'>Welcome to Minikube Scratch Service</h1>`+utils.Monke)
 	})
 
 	http.HandleFunc("/ping/{msg}", Routes.Ping)
-
+	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "server status: %v", Database.GormPing())
+	})
 	http.HandleFunc("/a", Routes.FakeResponse("a route"))
 	http.HandleFunc("/b", Routes.FakeResponse("b route"))
 	http.HandleFunc("/c", Routes.FakeResponse("c route"))
