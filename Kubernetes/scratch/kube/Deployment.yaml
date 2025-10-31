@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: scratch
-        image: i_scratch_go:latest
+        image: i_scratch:latest
         imagePullPolicy: Never
         envFrom:
           - configMapRef:
