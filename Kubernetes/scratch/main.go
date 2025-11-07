@@ -27,6 +27,9 @@ func main() {
 		fmt.Fprint(w, `<h1 style='text-align:center;'>Welcome to Minikube Scratch Service</h1>`+utils.Monke)
 	})
 
+	// helper function for figuring shizz out
+	http.HandleFunc("/debug", Routes.Debug())
+
 	http.HandleFunc("/ping/{msg}", Routes.Ping)
 	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "server status: %v", Database.GormPing())
