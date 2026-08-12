@@ -3,6 +3,7 @@ package Routes
 import (
 	"fmt"
 	"net/http"
+	"runtime/debug"
 	Monitor "scratch/monitor"
 
 	"github.com/prometheus/client_golang/prometheus"
@@ -21,6 +22,12 @@ var (
 		return func(w http.ResponseWriter, r *http.Request) {
 			requestPing.WithLabelValues(m).Inc()
 			fmt.Fprint(w, m+"\n")
+		}
+	}
+	Debug = func() func(w http.ResponseWriter, r *http.Request) {
+		return func(w http.ResponseWriter, r *http.Request) {
+			stack := debug.Stack()
+			fmt.Fprint(w, string(stack)+"\n")
 		}
 	}
 )
