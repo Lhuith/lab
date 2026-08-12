@@ -29,7 +29,9 @@ func main() {
 
 	http.HandleFunc("/ping/{msg}", Routes.Ping)
 	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "server status: %v", Database.GormPing())
+		status := fmt.Sprintf("server status: %v", Database.GormPing())
+		fmt.Println(status)
+		fmt.Fprint(w, status)
 	})
 	http.HandleFunc("/a", Routes.FakeResponse("a route"))
 	http.HandleFunc("/b", Routes.FakeResponse("b route"))

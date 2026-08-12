@@ -9,4 +9,4 @@ data:
   ENV: "Dev" # changed by cron job, hopefully!
   REPLACE: "replaced by cron with something"
   MSG: "cron%20job%20ping%20-%20config%20map%20v3"
-
+  URL: ping
