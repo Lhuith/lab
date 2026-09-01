@@ -1,0 +1,3 @@
+/mnt/f/Studies/Online/Learn Multithreading with Modern C++/Section7/build/CMakeFiles/Section7.dir
+/mnt/f/Studies/Online/Learn Multithreading with Modern C++/Section7/build/CMakeFiles/edit_cache.dir
+/mnt/f/Studies/Online/Learn Multithreading with Modern C++/Section7/build/CMakeFiles/rebuild_cache.dir

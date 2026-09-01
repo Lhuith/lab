@@ -1,0 +1,3 @@
+/mnt/e/Studies/Online/Learn Advanced Modern C++/breakOut/build/CMakeFiles/Breakout.dir
+/mnt/e/Studies/Online/Learn Advanced Modern C++/breakOut/build/CMakeFiles/edit_cache.dir
+/mnt/e/Studies/Online/Learn Advanced Modern C++/breakOut/build/CMakeFiles/rebuild_cache.dir

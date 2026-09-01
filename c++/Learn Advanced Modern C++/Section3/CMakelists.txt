@@ -1,0 +1,65 @@
+cmake_minimum_required(VERSION 3.22.1)
+
+project(Section3) #project name
+set(BUILD_SHARED_LIBS ON)
+
+set(SRC ${PROJECT_SOURCE_DIR}/src/)
+
+add_executable(${PROJECT_NAME} 
+    # ${SRC}conway.cpp
+    main.cpp
+)
+
+# find_package(glfw3 REQUIRED) #assuming you installed it somwhere
+target_include_directories(
+    ${PROJECT_NAME}
+    PRIVATE ${PROJECT_SOURCE_DIR}/src
+    # PRIVATE ${PROJECT_SOURCE_DIR}/../Libs/STB
+    # PRIVATE ${PROJECT_SOURCE_DIR}/../Libs/GLM 
+    # PRIVATE ${PROJECT_SOURCE_DIR}/../Libs/GLFW/include
+    # PRIVATE ${PROJECT_SOURCE_DIR}/../Libs/GLEW/include
+    # PRIVATE ${PROJECT_SOURCE_DIR}/../Libs/ASSIMP/include
+)
+
+#required in stb_image.h file
+# add_definitions("-DSTB_IMAGE_IMPLEMENTATION")
+
+if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+	message("You're on Mac OS !")
+elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+
+target_link_libraries(
+    ${PROJECT_NAME} 
+        # ${PROJECT_SOURCE_DIR}/../Libs/GLFW/lib-mingw-w64/libglfw3.a glfw
+        # ${PROJECT_SOURCE_DIR}/../Libs/GLEW/lib/Release/libGLEW.a GLEW GL
+        # ${PROJECT_SOURCE_DIR}/../Libs/ASSIMP/lib/libassimp.a
+    )
+	message("You're on Linux, using libXXX.a!")
+elseif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
+# https://stackoverflow.com/questions/4702732/the-program-cant-start-because-libgcc-s-dw2-1-dll-is-missing
+# gilgamesh smiles upon you hardmath
+add_definitions("-DGLEW_STATIC")
+set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc -static-libstdc++")
+
+#! not sure if this 
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-Bstatic,--whole-archive -Wl,--no-whole-archive")
+
+target_link_libraries(
+    ${PROJECT_NAME} 
+        # ${PROJECT_SOURCE_DIR}/../Libs/GLFW/lib-mingw-w64/libglfw3.a
+        # ${PROJECT_SOURCE_DIR}/../Libs/GLEW/lib/Release/libGLEW.a
+        # ${PROJECT_SOURCE_DIR}/../Libs/GLEW/lib/Release/Win32/glew32s.lib
+        # ${PROJECT_SOURCE_DIR}/../Libs/ASSIMP/lib/libassimp.a
+        # ${PROJECT_SOURCE_DIR}/../Libs/ASSIMP/contrib/zlib/libzlibstatic.a
+        # gdi32
+        # opengl32
+    )
+	message("You're on Windows !")
+endif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+
+
+# windows link
+
+

@@ -1,0 +1,3 @@
+/usr/bin/cmake -E rm -f CMakeFiles/Section7.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar qc CMakeFiles/Section7.dir/objects.a @CMakeFiles/Section7.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++-posix -std=c++17 -Werror -Wall -static -static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -Wl,--no-whole-archive -Wl,--whole-archive CMakeFiles/Section7.dir/objects.a -Wl,--no-whole-archive -o Section7.exe -Wl,--out-implib,libSection7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Section7.dir/linklibs.rsp

@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.cpp": "cpp",
+    "xstring": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled",
+  "cSpell.words": ["Voidsday"]
+}

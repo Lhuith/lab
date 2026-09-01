@@ -1,0 +1,3 @@
+/mnt/f/Studies/Online/Functional Programming using C++/Section3/build/CMakeFiles/Section3.dir
+/mnt/f/Studies/Online/Functional Programming using C++/Section3/build/CMakeFiles/edit_cache.dir
+/mnt/f/Studies/Online/Functional Programming using C++/Section3/build/CMakeFiles/rebuild_cache.dir

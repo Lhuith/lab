@@ -1,0 +1,1 @@
+ ../../Libs/GLFW/lib-mingw-w64/libglfw3.a ../../Libs/GLEW/lib/Release/libGLEW.a ../../Libs/GLEW/lib/Release/Win32/glew32s.lib ../../Libs/ASSIMP/lib/libassimp.a ../../Libs/ASSIMP/contrib/zlib/libzlibstatic.a -lgdi32 -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

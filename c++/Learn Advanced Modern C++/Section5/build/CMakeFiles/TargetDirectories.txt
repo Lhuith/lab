@@ -1,0 +1,3 @@
+/mnt/e/Studies/Online/Learn Advanced Modern C++/Section5/build/CMakeFiles/Section5.dir
+/mnt/e/Studies/Online/Learn Advanced Modern C++/Section5/build/CMakeFiles/edit_cache.dir
+/mnt/e/Studies/Online/Learn Advanced Modern C++/Section5/build/CMakeFiles/rebuild_cache.dir

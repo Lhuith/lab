@@ -1,0 +1,33 @@
+{
+  "cSpell.words": [
+    "aeroplane",
+    "Bamm",
+    "BASHET",
+    "boofer",
+    "complox",
+    "disto",
+    "fdist",
+    "Funcy",
+    "helo",
+    "Hoppy",
+    "idist",
+    "ifile",
+    "Kyra",
+    "neighbours",
+    "npegs",
+    "nturns",
+    "oddless",
+    "ofile",
+    "Prac",
+    "reording",
+    "SFML",
+    "Verdana",
+    "webfonts"
+  ],
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0, SpacesBeforeTrailingComments: 5}",
+  "files.associations": {
+    "*.cpp": "cpp",
+    "xstring": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}

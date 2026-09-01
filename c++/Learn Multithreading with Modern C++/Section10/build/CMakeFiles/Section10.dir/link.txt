@@ -1,0 +1,3 @@
+/usr/bin/cmake -E rm -f CMakeFiles/Section10.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar qc CMakeFiles/Section10.dir/objects.a @CMakeFiles/Section10.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++-posix -Werror -Wall -static -static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -Wl,--no-whole-archive -Wl,--whole-archive CMakeFiles/Section10.dir/objects.a -Wl,--no-whole-archive -o Section10.exe -Wl,--out-implib,libSection10.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Section10.dir/linkLibs.rsp

@@ -1,0 +1,3 @@
+/usr/bin/cmake -E rm -f CMakeFiles/RandomWalk.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar qc CMakeFiles/RandomWalk.dir/objects.a @CMakeFiles/RandomWalk.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++-posix -Werror -Wall -static -static-libgcc -static-libstdc++ -Wl,--whole-archive CMakeFiles/RandomWalk.dir/objects.a -Wl,--no-whole-archive -o RandomWalk.exe -Wl,--out-implib,libRandomWalk.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/RandomWalk.dir/linkLibs.rsp

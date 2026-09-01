@@ -1,0 +1,3 @@
+/usr/bin/cmake -E rm -f CMakeFiles/OpenGLCourseApp.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar qc CMakeFiles/OpenGLCourseApp.dir/objects.a @CMakeFiles/OpenGLCourseApp.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++ -static -static-libgcc -static-libstdc++ -Wl,-Bstatic,--whole-archive -Wl,--no-whole-archive -Wl,--whole-archive CMakeFiles/OpenGLCourseApp.dir/objects.a -Wl,--no-whole-archive -o OpenGLCourseApp.exe -Wl,--out-implib,libOpenGLCourseApp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/OpenGLCourseApp.dir/linklibs.rsp

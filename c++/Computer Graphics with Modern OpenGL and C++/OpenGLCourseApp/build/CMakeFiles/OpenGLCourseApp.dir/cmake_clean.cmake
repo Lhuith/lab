@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/OpenGLCourseApp.dir/main.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/main.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/camera.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/camera.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/directionalLight.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/directionalLight.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/light.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/light.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/material.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/material.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/mesh.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/mesh.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/model.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/model.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/omniShadow.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/omniShadow.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/pointLight.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/pointLight.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/shader.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/shader.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/shadow.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/shadow.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/skybox.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/skybox.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/spotLight.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/spotLight.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/texture.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/texture.cpp.obj.d"
+  "CMakeFiles/OpenGLCourseApp.dir/src/window.cpp.obj"
+  "CMakeFiles/OpenGLCourseApp.dir/src/window.cpp.obj.d"
+  "OpenGLCourseApp.exe"
+  "OpenGLCourseApp.pdb"
+  "libOpenGLCourseApp.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/OpenGLCourseApp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
