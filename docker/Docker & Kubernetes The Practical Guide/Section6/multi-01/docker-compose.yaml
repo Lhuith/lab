@@ -1,0 +1,44 @@
+services:
+  mongodb: # not container names, but what containers will refere to eachother as
+    image: "mongo"
+    volumes:
+      - data:/data/db
+    # environment:
+    # MONGO_INITDB_ROOT_USERNAME: gene
+    # MONGO_INITDB_ROOT_PASSWARD: nomads
+    # - MONGO_INITDB_ROOT_USERNAME=gene
+    env_file:
+      - ./env/mongo.env
+    # networks:
+    # - goals-net
+  backend:
+    build: ./backend
+    # build:
+    #   context: ./backend
+    #   dockerfile: Dockerfile
+    #   args:
+    #     some-args: 1
+    ports:
+      - "80:80" # host:container-port
+    volumes:
+      - logs:/app/logs
+      - ./backend:/app
+      - /app/node_modules
+    env_file:
+      - ./env/backend.env
+    depends_on:
+      - mongodb
+      # - ...
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+volumes:
+  data:
+  logs:
