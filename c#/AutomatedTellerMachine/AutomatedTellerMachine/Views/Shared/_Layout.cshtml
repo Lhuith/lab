@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MVC Bank</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+            <div class="navbar-header">
+                @Html.ActionLink("MVC Bank", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto color-w">
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "color-w margin-width-20" })</li>
+                    <li>@Html.ActionLink("About", "About", "Home", new { @class = "color-w margin-width-20" })</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "color-w margin-width-20" })</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+
+            </div>
+            </div>
+    </nav>
+
+
+
+
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="~/Content/Images/logo.png" class="img-fluid btn-block"/>
+            </div>
+        </div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - MVC Bank- @Html.Action("Serial", "Home", new { letterCase = "lower" })</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
