@@ -1,0 +1,8 @@
+mage:
+  registry: docker.io
+  repository: bitnamilegacy/wordpress
+
+  mariadb:
+    Image:
+      registry: docker.io
+      repository: bitnamilegacy/mariadb

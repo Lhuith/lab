@@ -1,0 +1,18 @@
+# normal comment
+{{- /* i am a testing test */}}
+{{- /* <function name> <a1> <a2> */}}
+test: {{ replace " " "-" .Values.test | lower }}
+labels:
+  {{- /* the app label comes from the Release */}}
+  app: {{ .Release.Name }}
+  {{- /* The chart label comes form the chart information */}}
+  chart: {{ .Chart.Name }}
+  {{- if eq .Values.enviromnent "production" }}
+  enviromnent: production
+  build: stable
+  public-ingress: true
+  {{- else }}
+  enviromnent: dev
+  build: alpha
+  public-ingress: false
+  {{- end }}

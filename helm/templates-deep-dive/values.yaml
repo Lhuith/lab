@@ -1,0 +1,40 @@
+## @param customName allows to set custom resource name
+## Defaults to {{ .Release.Name }}-{{ .Chart.Name }}
+customName: ""
+
+## nginx container ports\
+##
+## @param containerPorts.http
+containerPort:
+  http: 80
+
+## @param replicaCount # of nginx repliacs to deploy
+replicaCount: 3
+
+## settings for nginx image
+##
+## @param image.name nginx image name to use
+## @param iamge.tag nginx image tag to use
+image:
+  name: nginx
+  tag: "1.27.0"
+
+## @param securityContext.runAsUser
+## @param securityContext.fsGroup
+securityContext:
+  enabled: true
+  runAsUser: 1000
+  fsGroup: 2000
+
+## settings for nginx services
+# services are a map with the following schema
+#
+## @param services["*"].type the type of service in front of the nginx pods/containers
+## @param servers["*"].port where the service is recieved
+services:
+  svc1:
+    type: ClusterIP
+    port: 80
+  svc2:
+    type: NodePort
+    port: 30007

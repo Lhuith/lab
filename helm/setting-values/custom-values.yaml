@@ -1,0 +1,19 @@
+service:
+  type: NodePort
+
+wordpressUsername: lhuith
+existingSecret: custom-wp-credentials
+
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+
+image:
+  registry: docker.io
+  repository: bitnamilegacy/wordpress
+
+mariadb:
+  image:
+    registry: docker.io
+    repository: bitnamilegacy/mariadb
